@@ -52,10 +52,11 @@ driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div').click()
 #Change timer to 10 mins
 time_box = driver.find_element_by_xpath('/html/body/x-modal[2]/div/input')
 time_box.send_keys(Keys.BACK_SPACE, "10")
+time.sleep(1)
 driver.find_element_by_xpath('/html/body/x-modal[2]/div/div[2]/button').click()
 
 #Start the Practice Session
-time.sleep(2)
+time.sleep(1)
 driver.find_element_by_xpath('//*[@id="start-button"]').click()
 
 #Target Pronoun, Response, and Noun Elements
